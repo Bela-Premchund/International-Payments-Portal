@@ -7,13 +7,18 @@ ATTRIBUTES:
 
 */
 
-exports.requireRole = (roles) => {
+const requireRole = (roles) => {
   return (req, res, next) => {
+    if (!req.user) {
+      return res.status(401).json({ message: "Unauthorized: no user found" });
+    }
+
     if (!roles.includes(req.user.role)) {
       return res.status(403).json({ message: "Forbidden: insufficient rights" });
     }
+
     next();
   };
 };
 
-module.exports = { protect };
+module.exports = { requireRole };
