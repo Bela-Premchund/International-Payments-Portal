@@ -1,0 +1,146 @@
+/*
+ATTRIBUTES:
+  Website: Animation code review
+  Author: ChatGPT
+  URL: https://chatgpt.com/c/68e7f98d-5520-8320-a2c0-b9208ce345aa
+  Accessed on: 2025-11-07
+
+  Website: Basic Registration and Login Form Using React Hook Form
+  Author: Geeks for Geeks
+  URL: https://www.geeksforgeeks.org/reactjs/react-hook-form-create-basic-reactjs-registration-and-login-form/
+  Accessed on: 2025-10-09
+*/
+
+.dashboard-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #e0f7fa; /* light teal */
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* === Header === */
+.dashboard-container h1 {
+  text-align: center;
+  color: #0077b6; /* ocean blue */
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* === Table === */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.transaction-table thead {
+  background-color: #0077b6; /* ocean blue header */
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #b2ebf2;
+}
+
+.transaction-table tbody tr:nth-child(even) {
+  background-color: #f1fcfd;
+}
+
+.transaction-table tbody tr:hover {
+  background-color: #b2ebf2; /* subtle hover effect */
+  transition: background-color 0.2s ease;
+}
+
+/* === Buttons === */
+.verify-btn {
+  background-color: #0077b6; /* ocean blue */
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.verify-btn:hover {
+  background-color: #00b4d8; /* teal hover */
+}
+
+.verified {
+  background-color: #007f5f; /* green for verified */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-weight: bold;
+}
+
+/* === Submit button === */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077b6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #00b4d8;
+}
+
+/* === Messages === */
+.error {
+  color: #d90429;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: #007f5f;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* === Optional header tabs for employees === */
+.dashboard-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn-dashboard {
+  flex: 1 1 40%;
+  min-width: 120px;
+  padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-dashboard:hover {
+  background-color: #00b4d8;
+}
